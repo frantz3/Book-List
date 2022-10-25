@@ -14,13 +14,13 @@ function BookList({ book, onHandleDelete }) {
     }
     return (
       <div key={index}>
-        <button onClick={handleDeleteClick}>Delete</button>
         <ListGroup variant="flush">
           <ListGroup.Item> Title: {bookObj.title}</ListGroup.Item>
           <ListGroup.Item>Author: {bookObj.author}</ListGroup.Item>
           <ListGroup.Item>Publisher: {bookObj.publisher}</ListGroup.Item>
           <ListGroup.Item>Genre: {bookObj.genre}</ListGroup.Item>
         </ListGroup>
+        <button onClick={handleDeleteClick}>Delete</button>
       </div>
     );
   });

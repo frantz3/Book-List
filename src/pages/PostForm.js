@@ -35,7 +35,7 @@ function PostForm({ setBooks }) {
       .then((r) => r.json())
       .then((data) => {
         setBooks((books) => [...books, data])
-        navigate("/home")
+        navigate("/")
       });
 
     setFormData(prevState);
