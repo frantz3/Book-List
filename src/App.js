@@ -1,6 +1,5 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
 import PostForm from "./pages/PostForm";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header";
@@ -27,10 +26,10 @@ function App() {
 
         <Route
           exact
-          path="/home"
+          path="/"
           element={<Home books={books} handleDeleteBook={handleDeleteBook} />}
         />
-        <Route exact path="/" element={<Login />} />
+        
       </Routes>
     </div>
   );

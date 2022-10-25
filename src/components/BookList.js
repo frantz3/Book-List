@@ -1,7 +1,6 @@
 import React from "react";
-// import Book from "../pages/Home/Book";
 import ListGroup from "react-bootstrap/ListGroup";
-// import LoginForm from "../pages/Login";
+
 
 function BookList({ book, onHandleDelete }) {
   const Books = book.map((bookObj, index) => {
