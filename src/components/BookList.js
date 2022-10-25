@@ -7,9 +7,6 @@ function BookList({ book, onHandleDelete }) {
   const Books = book.map((bookObj, index) => {
 
     function handleDeleteClick() {
-
-      
-   console.log(bookObj)
       fetch(`http://localhost:9292/books/${bookObj.id}`, {
         method: "DELETE",
       })
